@@ -1,0 +1,21 @@
+#SideBar {
+    grid-gap: 1vh;
+    background-color: #1a1b20;
+    border-radius: 5px;
+    display: grid;
+    gap: 1vh;
+    grid-auto-flow: row;
+    grid-auto-rows: -webkit-max-content;
+    grid-auto-rows: max-content;
+    height: 100vh;
+    justify-items: center;
+    max-width: 300px;
+    min-width: 150px;
+    padding: 5vh 1vh 1vh;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 30vw;
+    z-index: 8;
+}
