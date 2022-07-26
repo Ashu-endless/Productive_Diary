@@ -1,7 +1,7 @@
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import './CalenderView.css'
-
+import { useNavigate } from "react-router-dom";
 function tilecontentassign(date,view){
     console.log(date,view)
     if (view === 'month' && date.getDate() === 29){
@@ -14,11 +14,14 @@ function tilecontentassign(date,view){
 
 
 function CalenderView() {
+
+    let navigate = useNavigate();
+
     return ( <>
     <Calendar 
     // tileContent={({ activeStartDate, date, view }) => view === 'month' && date.getDate() === 29? <p className='tasksno' >5</p> : null}  
     tileContent={({ activeStartDate, date, view }) => tilecontentassign(date,view)}  
-    onClickDay={(value, event) => console.log('Clicked day: ', value)} />
+    onClickDay={(value, event) => navigate(`/dayView=${value.getDate()}-${value.getMonth()}-${value.getUTCFullYear()}`)} />
     </> );
 }
 

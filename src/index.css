@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -13,13 +15,37 @@ code {
 }
 
 div#root {
-  background: #13132b;
   box-sizing: border-box;
-  color: #fff;
+  color: var(--color-primary);
   height: 100vh;
   overflow: auto;
-  padding-top: 4rem;
   width: 100vw;
-  background-color: #231832;
-  background-image: url("data:image/svg+xml,%3Csvg width='84' height='48' viewBox='0 0 84 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h12v6H0V0zm28 8h12v6H28V8zm14-8h12v6H42V0zm14 0h12v6H56V0zm0 8h12v6H56V8zM42 8h12v6H42V8zm0 16h12v6H42v-6zm14-8h12v6H56v-6zm14 0h12v6H70v-6zm0-16h12v6H70V0zM28 32h12v6H28v-6zM14 16h12v6H14v-6zM0 24h12v6H0v-6zm0 8h12v6H0v-6zm14 0h12v6H14v-6zm14 8h12v6H28v-6zm-14 0h12v6H14v-6zm28 0h12v6H42v-6zm14-8h12v6H56v-6zm0-8h12v6H56v-6zm14 8h12v6H70v-6zm0 8h12v6H70v-6zM14 24h12v6H14v-6zm14-8h12v6H28v-6zM14 8h12v6H14V8zM0 8h12v6H0V8z' fill='%230b0614' fill-opacity='0.43' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-color: var(--bg_color-primary);
+  /* background-image: url("data:image/svg+xml,%3Csvg width='84' height='48' viewBox='0 0 84 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h12v6H0V0zm28 8h12v6H28V8zm14-8h12v6H42V0zm14 0h12v6H56V0zm0 8h12v6H56V8zM42 8h12v6H42V8zm0 16h12v6H42v-6zm14-8h12v6H56v-6zm14 0h12v6H70v-6zm0-16h12v6H70V0zM28 32h12v6H28v-6zM14 16h12v6H14v-6zM0 24h12v6H0v-6zm0 8h12v6H0v-6zm14 0h12v6H14v-6zm14 8h12v6H28v-6zm-14 0h12v6H14v-6zm28 0h12v6H42v-6zm14-8h12v6H56v-6zm0-8h12v6H56v-6zm14 8h12v6H70v-6zm0 8h12v6H70v-6zM14 24h12v6H14v-6zm14-8h12v6H28v-6zM14 8h12v6H14V8zM0 8h12v6H0V8z' fill='%230b0614' fill-opacity='0.43' fill-rule='evenodd'/%3E%3C/svg%3E"); */
 }
+
+a{
+  text-decoration: none;
+}
+[data-theme='dark']{
+  --bg_nav : rgba(10, 25, 41, 0.72);
+  --bs_nav : rgb(19 47 76) 0px -1px 1px inset;
+  --border_color_icon_nav : #173a5e;
+  --color_icon_nav : cornflowerblue;
+  --color_icon_nav-hover : rgba(19, 47, 76, 0.4);
+  --bg_color-primary:rgb(10, 25, 41);
+  --color-primary:white;
+
+
+  
+}
+[data-theme='light']{
+  --bg_nav : rgba(255,255,255,0.72);
+  --bs_nav : inset 0px -1px 1px #e7ebf0;
+  --border_color_icon_nav : #CDD2D7;
+  --color_icon_nav : #E0E3E7;
+  --color_icon_nav-hover : #F3F6F9;
+  --bg_color-primary:#F3F6F9;
+  --color-primary:black;
+}
+
